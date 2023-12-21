@@ -1,0 +1,105 @@
+<html>
+  <head>
+      <title>Get Details..</title>
+      <style>
+           body, html {
+              height: 100%;
+              margin: 0;
+           }
+
+            .bg {
+
+              background-image: url("../static/i.jpg");
+
+
+              height: 100%;
+
+
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          .whole{
+
+
+          }
+          .MainContent{
+             margin-top:30px;
+             margin-left:550px;
+             border : 2px solid black;
+             border-radius :10px;
+             height:800px;
+             width:600px;
+
+
+          }
+          .innerContent{
+            margin:3px;
+            padding:5px;
+            border:2px solid brown;
+            border-radius: 10px;
+          }
+      </style>
+  </head>
+  <body>
+  <div class="bg">
+
+      <div clsaa="whole">
+
+         <div class="MainContent">
+             <form action="/getDetails" method="post">
+                   <div class="innerContent">
+                       <h3>Personal Details</h3>
+                       <label>Enter Your Name :-</label>
+                       <input type="text" name="name1" ><br>
+                       <label>Enter Your Address :-</label>
+                       <input type="text" name="address" ><br>
+                       <label>Gender :-</label>
+                       <input type="radio" id="male"  name="gender" value="Male">
+                       <label for="male">Male</label>
+                       <input type="radio" id="female"  name="gender" value="Female">
+                       <label for="female">Female</label>
+                   </div>
+
+
+                   <div class="innerContent">
+                       <h3>Education Details</h3>
+                       <label for="education">Education:</label>
+                       <select name="education" id="education">
+                          <option value="1oth">10th</option>
+                          <option value="12th">12th</option>
+                          <option value="graduation">Graduation</option>
+
+                        </select><br>
+                       <label>Enter College Name :-</label>
+                       <input type="text" name="college_name" ><br>
+                       <label>Enter Branch :-</label>
+                       <input type="text" name="branch" ><br>
+                       <label>Enter Skills :-</label><br>
+                       <input type="checkbox" id="c" name="c" value="C">
+                       <lable for="c">C++</lable><br>
+                       <input type="checkbox" id="java" name="java" value="Java">
+                       <lable for="java">Java</lable><br>
+                       <input type="checkbox" id="python" name="Python" value="Python">
+                       <lable for="python">Python</lable><br>
+                   </div>
+
+
+                   <div class="innerContent">
+                       <h3>Contact Details</h3>
+                       <label>Enter Email Id :-</label>
+                       <input type="text" name="email" ><br>
+                       <label>Enter Mob No:-</label>
+                       <input type="number" name="mobno" ><br>
+                   </div>
+                   <div><input type="submit" value="submit"> </div>
+             </form>
+         </div>
+
+     </div>
+  </div>
+
+
+
+  </body>
+</html>
